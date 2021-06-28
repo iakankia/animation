@@ -1,0 +1,58 @@
+.background{
+	background-image: url("../images/bg-img.jpg");
+	height: 1000px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+	background-attachment: fixed;
+	z-index: 1
+}
+.goblet-of-fire{width: 200px;
+	position: absolute;
+	top: 340px;
+	left: 720px;
+}
+.potter{
+	width: 200px;
+	position: absolute;
+	top: 340px;
+	left: 100px;
+	animation: potter 6s linear infinite;
+	animation-direction: alternate;
+}
+@keyframes potter{
+	0%{left: 120px;}
+	25%{left:  200px;}
+	50%{left:  280px;}
+	75%{left:  320px;}
+	100%{left: 520px; }
+}
+.granger{
+	width: 200px;
+	position: absolute;
+	top:120px;
+	left: 720px;
+	animation: granger 5s linear infinite;
+	animation-direction: alternate;
+}
+@keyframes granger{
+	0%{top: 0px;}
+	25%{top: 60px;}
+	50%{top: 120px;}
+	75%{top: 180px;}
+	100%{top: 240px; }
+}
+.weasley{
+	width: 200px;
+	position: absolute;
+	top: 700px;
+	left: 1300px;
+    animation: diagonal 6s infinite;
+    animation-direction: alternate;
+}
+@keyframes diagonal {
+    0%       { transform: translatex(0px) translatey(0px) }
+    50%      { transform: translatex(20px) translatey(20px); }
+    100%     { transform: translatex(-350px) translatey(-350px) }
+}
