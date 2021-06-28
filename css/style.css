@@ -1,3 +1,10 @@
+
+
+body{
+	overflow: hidden;
+}
+
+
 .background{
 	background-image: url("../images/bg-img.jpg");
 	height: 1000px;
@@ -48,8 +55,35 @@
 	position: absolute;
 	top: 700px;
 	left: 1300px;
-    animation: diagonal 6s infinite;
     animation-direction: alternate;
+	-webkit-animation: diagonal 6s infinite;
+    -moz-animation: diagonal 6s infinite;
+    -o-animation: diagonal 6s infinite;
+    animation: diagonal 6s infinite;
+}
+
+@-webkit-keyframes diagonal {
+    0%       { transform: translatex(0px) translatey(0px) }
+    50%      { transform: translatex(20px) translatey(20px); }
+    100%     { transform: translatex(-350px) translatey(-350px) }
+}
+
+@-moz-keyframes diagonal {
+    0%       { transform: translatex(0px) translatey(0px) }
+    50%      { transform: translatex(20px) translatey(20px); }
+    100%     { transform: translatex(-350px) translatey(-350px) }
+}
+
+@-o-keyframes diagonal {
+    0%       { transform: translatex(0px) translatey(0px) }
+    50%      { transform: translatex(20px) translatey(20px); }
+    100%     { transform: translatex(-350px) translatey(-350px) }
+}
+
+@keyframes diagonal {
+    0%       { transform: translatex(px) translatey(0px) }
+    50%      { transform: translatex(20px) translatey(20px); }
+    100%     { transform: translatex(-35px) translatey(-350px) }
 }
 @keyframes diagonal {
     0%       { transform: translatex(0px) translatey(0px) }
